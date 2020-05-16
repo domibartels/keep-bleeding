@@ -1,0 +1,106 @@
+body {
+  background: rgb(252,176,69);
+  background: linear-gradient(
+    0deg,
+    rgba(252,176,69,1) 0%,
+    rgba(105,58,180,1) 31%,
+    rgba(253,63,29,1) 69%,
+    rgba(252,176,69,1) 100%
+  );
+  font-family: 'Didot-HTF-B16-Bold';
+  color: white;
+}
+header {
+  position: sticky;
+  top: 1.2vw;
+}
+@font-face {
+  font-family: 'Didot-HTF-B16-Bold';
+  src: url('Didot-HTF-B16-Bold.woff') format('woff');
+}
+.font-16 {
+  font-size: 16px;
+  line-height: 1.25em;
+}
+.font-550 {
+  font-size: 25vw;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+}
+.font-30 {
+  font-size: 30px;
+}
+
+a {
+  font-family: 'Didot-HTF-B16-Bold';
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  animation-name: tremble;
+  transition: position .5s ease-out
+}
+@keyframes tremble {}
+
+.row {
+  display: flex;
+}
+.column {
+  flex-grow: 1;
+}
+.column-1 {
+  flex: 0 0 8.33%;
+}
+.column-2 {
+  flex: 0 0 16.66%;
+}
+.column-3 {
+  flex: 0 0 25%;
+}
+.column-4 {
+  flex: 0 0 33.33%;
+}
+.column-5 {
+  flex: 0 0 41.66%;
+}
+.column-6 {
+  flex: 0 0 50%;
+}
+.column-7 {
+  flex: 0 0 58.33%;
+}
+.column-8 {
+  flex: 0 0 66.66%;
+}
+.column-9 {
+  flex: 0 0 75%;
+}
+.column-10 {
+  flex: 0 0 83.33%;
+}
+.column-11 {
+  flex: 0 0 91.66%;
+}
+.column-12 {
+  flex: 0 0 100%;
+}
+
+#container {
+    }
+
+    #box {
+      -webkit-animation-name: move;
+    	-webkit-animation-duration: 25s;
+    	-webkit-animation-iteration-count: infinite;
+    	-webkit-animation-direction: reverse;
+    	-webkit-animation-timing-function: linear;
+    }
+
+    @-webkit-keyframes move {
+    	0% {
+    		margin-top: 0;
+    	}
+	    100% {
+    		margin-top: 100%;
+    	}
+    }
